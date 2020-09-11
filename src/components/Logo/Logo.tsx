@@ -1,14 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import chef from '../../assets/img/chef.png'
+import chef from '../../assets/img/leek.png'
 
 const Logo: React.FC = () => {
   return (
     <StyledLogo to="/">
       <img src={chef} height="32" style={{ marginTop: -4 }} />
       <StyledText>
-        SushiSwap <MasterChefText>MasterChef</MasterChefText>
+        LeekSwap <MasterChefText>实体资产上链</MasterChefText>
       </StyledText>
     </StyledLogo>
   )

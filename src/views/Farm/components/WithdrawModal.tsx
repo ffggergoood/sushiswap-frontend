@@ -39,7 +39,7 @@ const WithdrawModal: React.FC<WithdrawModalProps> = ({
 
   return (
     <Modal>
-      <ModalTitle text={`Withdraw ${tokenName}`} />
+      <ModalTitle text={`取款 ${tokenName}`} />
       <TokenInput
         onSelectMax={handleSelectMax}
         onChange={handleChange}
@@ -48,10 +48,10 @@ const WithdrawModal: React.FC<WithdrawModalProps> = ({
         symbol={tokenName}
       />
       <ModalActions>
-        <Button text="Cancel" variant="secondary" onClick={onDismiss} />
+        <Button text="取消" variant="secondary" onClick={onDismiss} />
         <Button
           disabled={pendingTx}
-          text={pendingTx ? 'Pending Confirmation' : 'Confirm'}
+          text={pendingTx ? '等待确认中' : '确认'}
           onClick={async () => {
             setPendingTx(true)
             await onConfirm(val)

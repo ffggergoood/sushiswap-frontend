@@ -94,18 +94,18 @@ const Balances: React.FC = () => {
               <SushiIcon />
               <Spacer />
               <div style={{ flex: 1 }}>
-                <Label text="Your SUSHI Balance" />
+                <Label text="你的 YSF 资产" />
                 <Value
-                  value={!!account ? getBalanceNumber(sushiBalance) : 'Locked'}
+                  value={!!account ? getBalanceNumber(sushiBalance) : '已锁定'}
                 />
               </div>
             </StyledBalance>
           </StyledBalances>
         </CardContent>
         <Footnote>
-          Pending harvest
+          等待收获
           <FootnoteValue>
-            <PendingRewards /> SUSHI
+            <PendingRewards /> YSF
           </FootnoteValue>
         </Footnote>
       </Card>
@@ -113,14 +113,14 @@ const Balances: React.FC = () => {
 
       <Card>
         <CardContent>
-          <Label text="Total SUSHI Supply" />
+          <Label text="全部 YSF 供应量" />
           <Value
-            value={totalSupply ? getBalanceNumber(totalSupply) : 'Locked'}
+            value={totalSupply ? getBalanceNumber(totalSupply) : '已锁定'}
           />
         </CardContent>
         <Footnote>
-          New rewards per block
-          <FootnoteValue>1,000 SUSHI</FootnoteValue>
+          每个新区块奖励
+          <FootnoteValue>1,000 YSF</FootnoteValue>
         </Footnote>
       </Card>
     </StyledWrapper>

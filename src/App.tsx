@@ -38,9 +38,9 @@ const App: React.FC = () => {
           <Route path="/farms">
             <Farms />
           </Route>
-          <Route path="/staking">
+          {/* <Route path="/staking">
             <Stake />
-          </Route>
+          </Route> */}
         </Switch>
       </Router>
       <Disclaimer />

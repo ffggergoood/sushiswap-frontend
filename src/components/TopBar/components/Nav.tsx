@@ -6,19 +6,19 @@ const Nav: React.FC = () => {
   return (
     <StyledNav>
       <StyledLink exact activeClassName="active" to="/">
-        Home
+        主页
       </StyledLink>
       <StyledLink exact activeClassName="active" to="/farms">
-        Menu
+        资产池
       </StyledLink>
-      <StyledLink exact activeClassName="active" to="/staking">
+      {/* <StyledLink exact activeClassName="active" to="/staking">
         Staking
-      </StyledLink>
+      </StyledLink> */}
       <StyledAbsoluteLink
-        href="https://medium.com/sushiswap/the-sushiswap-project-c4049ea9941e"
+        href="https://github.com/leek-finance/sushiswap-frontend"
         target="_blank"
       >
-        About
+        免责申明
       </StyledAbsoluteLink>
     </StyledNav>
   )

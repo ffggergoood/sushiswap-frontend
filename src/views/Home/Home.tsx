@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import chef from '../../assets/img/chef.png'
+import chef from '../../assets/img/leek.png'
 import Button from '../../components/Button'
 import Container from '../../components/Container'
 import Page from '../../components/Page'
@@ -13,8 +13,8 @@ const Home: React.FC = () => {
     <Page>
       <PageHeader
         icon={<img src={chef} height={120} />}
-        title="MasterChef is Ready"
-        subtitle="Stake Uniswap LP tokens to claim your very own yummy SUSHI!"
+        title="优质资产通证化"
+        subtitle="抵押实体资产代币，领取你自己的YSF!"
       />
 
       <Container>
@@ -22,8 +22,7 @@ const Home: React.FC = () => {
       </Container>
       <Spacer size="lg" />
       <StyledInfo>
-        🏆<b>Pro Tip</b>: SUSHI-ETH UNI-V2 LP token pool yields TWICE more token
-        rewards per block.
+        🏆<b>风险提示</b>: 资产抵押可能存在一定风险，请用户仔细核实后再操作。
       </StyledInfo>
       <Spacer size="lg" />
       <div
@@ -31,7 +30,7 @@ const Home: React.FC = () => {
           margin: '0 auto',
         }}
       >
-        <Button text="🔪 See the Menu" to="/farms" variant="secondary" />
+        <Button text="🔪 查看资产池" to="/farms" variant="secondary" />
       </div>
     </Page>
   )

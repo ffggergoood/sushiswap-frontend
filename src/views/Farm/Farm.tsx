@@ -58,7 +58,7 @@ const Farm: React.FC = () => {
     <>
       <PageHeader
         icon={icon}
-        subtitle={`Deposit ${lpTokenName}  Tokens and earn ${earnTokenName}`}
+        subtitle={`存入 ${lpTokenName}  代币，并将赚取 ${earnTokenName}`}
         title={name}
       />
       <StyledFarm>
@@ -77,8 +77,7 @@ const Farm: React.FC = () => {
         </StyledCardsWrapper>
         <Spacer size="lg" />
         <StyledInfo>
-          ⭐️ Every time you stake and unstake LP tokens, the contract will
-          automagically harvest SUSHI rewards for you!
+          ⭐️ 每当您投入和存入资产代币时，合约将自动为您收获 YSF 奖励！
         </StyledInfo>
         <Spacer size="lg" />
       </StyledFarm>

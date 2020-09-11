@@ -39,7 +39,7 @@ const DepositModal: React.FC<DepositModalProps> = ({
 
   return (
     <Modal>
-      <ModalTitle text={`Deposit ${tokenName} Tokens`} />
+      <ModalTitle text={`存入 ${tokenName} 代币`} />
       <TokenInput
         value={val}
         onSelectMax={handleSelectMax}
@@ -48,10 +48,10 @@ const DepositModal: React.FC<DepositModalProps> = ({
         symbol={tokenName}
       />
       <ModalActions>
-        <Button text="Cancel" variant="secondary" onClick={onDismiss} />
+        <Button text="取消" variant="secondary" onClick={onDismiss} />
         <Button
           disabled={pendingTx}
-          text={pendingTx ? 'Pending Confirmation' : 'Confirm'}
+          text={pendingTx ? '等待确认中' : '确认'}
           onClick={async () => {
             setPendingTx(true)
             await onConfirm(val)

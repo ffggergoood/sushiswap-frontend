@@ -2,7 +2,7 @@ import React from 'react'
 import { Route, Switch, useRouteMatch } from 'react-router-dom'
 import { useWallet } from 'use-wallet'
 
-import chef from '../../assets/img/chef.png'
+import chef from '../../assets/img/leek.png'
 
 import Button from '../../components/Button'
 import Page from '../../components/Page'
@@ -27,8 +27,8 @@ const Farms: React.FC = () => {
             <Route exact path={path}>
               <PageHeader
                 icon={<img src={chef} height="120" />}
-                subtitle="Earn SUSHI tokens by staking Uniswap V2 LP Tokens."
-                title="Select Your Favorite Dishes"
+                subtitle="通过抵押资产通证，赚取 YSF 治理代币"
+                title="选择你最喜欢的资产"
               />
               <FarmCards />
             </Route>
@@ -47,7 +47,7 @@ const Farms: React.FC = () => {
           >
             <Button
               onClick={onPresentWalletProviderModal}
-              text="🔓 Unlock Wallet"
+              text="🔓 未解锁钱包"
             />
           </div>
         )}

@@ -78,7 +78,7 @@ const FarmCards: React.FC = () => {
         ))
       ) : (
         <StyledLoadingWrapper>
-          <Loader text="Cooking the rice ..." />
+          <Loader text="加载中 ..." />
         </StyledLoadingWrapper>
       )}
     </StyledCards>
@@ -135,13 +135,13 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm }) => {
             <CardIcon>{farm.icon}</CardIcon>
             <StyledTitle>{farm.name}</StyledTitle>
             <StyledDetails>
-              <StyledDetail>Deposit {farm.lpToken.toUpperCase()}</StyledDetail>
-              <StyledDetail>Earn {farm.earnToken.toUpperCase()}</StyledDetail>
+              <StyledDetail>存入 {farm.lpToken.toUpperCase()}</StyledDetail>
+              <StyledDetail>赚取 {farm.earnToken.toUpperCase()}</StyledDetail>
             </StyledDetails>
             <Spacer />
             <Button
               disabled={!poolActive}
-              text={poolActive ? 'Select' : undefined}
+              text={poolActive ? '选择' : undefined}
               to={`/farms/${farm.id}`}
             >
               {!poolActive && (
@@ -152,7 +152,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm }) => {
               )}
             </Button>
             <StyledInsight>
-              <span>APY</span>
+              <span>存款年收益</span>
               <span>
                 {farm.apy
                   ? `${farm.apy
@@ -160,7 +160,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm }) => {
                       .toNumber()
                       .toLocaleString('en-US')
                       .slice(0, -1)}%`
-                  : 'Loading ...'}
+                  : '加载中 ...'}
               </span>
               {/* <span>
                 {farm.tokenAmount
