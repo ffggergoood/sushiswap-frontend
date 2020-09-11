@@ -51,7 +51,7 @@ export const contractAddresses = {
 }
 
 /*
-UNI-V2 LP Address on mainnet for reference
+UNI-V2 LP Address on mainnet for reference   pools
 ==========================================
 0  USDT 0x0d4a11d5eeaac28ec3f61d100daf4d40471f1852
 1  USDC 0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc
