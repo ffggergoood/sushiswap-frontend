@@ -70,6 +70,19 @@ UNI-V2 LP Address on mainnet for reference   pools
 
 export const supportedPools = [
   {
+    pid: 18,
+    lpAddresses: {
+      1: '0xce84867c3c02b05dc570d0135103d3fb9cc19433',
+    },
+    tokenAddresses: {
+      1: '0x6b3595068778dd592e39a122f4f5a5cf09c90fe2',
+    },
+    name: '玉石资产!',
+    symbol: 'YJS-ETH UNI-V2 LP',
+    tokenSymbol: 'YJS',
+    icon: '🍣',
+  },
+  {
     pid: 12,
     lpAddresses: {
       1: '0xce84867c3c02b05dc570d0135103d3fb9cc19433',
