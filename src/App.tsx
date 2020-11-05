@@ -51,10 +51,12 @@ const App: React.FC = () => {
 const Providers: React.FC = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>
+      {/* network： rinkeby： 4   mainnet： 1 */}
       <UseWalletProvider
-        chainId={1}
+        chainId={4}
         connectors={{
-          walletconnect: { rpcUrl: 'https://mainnet.eth.aragon.network/' },
+          // walletconnect: { rpcUrl: 'https://mainnet.eth.aragon.network/' },
+          walletconnect: { rpcUrl: 'https://rinkeby.eth.aragon.network/' },
         }}
       >
         <SushiProvider>

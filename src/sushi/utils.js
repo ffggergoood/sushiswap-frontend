@@ -74,10 +74,10 @@ export const getEarned = async (masterChefContract, pid, account) => {
 }
 
 export const getTotalLPWethValue = async (
-  masterChefContract,
-  wethContract,
-  lpContract,
-  tokenContract,
+  masterChefContract,  // 0xDfA159Cc527Fac22231Ca20D546f28D1DD2094c8
+  wethContract,        // 0x8e0029F433cD0819E52092aFd483749901FaeA32
+  lpContract,          //
+  tokenContract,       //
   pid,
 ) => {
   // Get balance of the token address
